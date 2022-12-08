@@ -5,22 +5,20 @@ terraform {
     hostname     = "app.terraform.io"
 
     workspaces {
-      name = "f5-xc-dummy-a-module"
+      name = "f5-xc-dummy-a"
     }
   }
-
+  
   required_providers {
     volterra = {
-      source  = "volterraedge/volterra"
-      version = ">= 0.11.14"
+      source = "volterraedge/volterra"
+      version = "= 0.11.16"
     }
-
     aws = {
-      source  = "hashicorp/aws"
+      source = "hashicorp/aws"
       version = ">= 4.33.0"
     }
-
     local = ">= 2.2.3"
-    null  = ">= 3.1.1"
+    null = ">= 3.1.1"
   }
 }
