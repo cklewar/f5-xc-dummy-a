@@ -1,4 +1,4 @@
-name: f5-xc-dummy-a
+name: F5XC Dummy A module
 on: workflow_dispatch
 jobs:
   f5-xc-dummy-a-module-validate:
